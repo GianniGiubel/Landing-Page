@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page(estudo)</title>   
+    <link rel="stylesheet" href="assets/styles/reset.css">      
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/ffa58a5840.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false">
+                <a href="#home">logo</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false">
+                    <li><a href="#intro">intro</a></li>                    
+                    <li><a href="#grid-jobs">jobs</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#recent-jobs">work</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>January brings us firefox 85</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi nesciunt commodi molestiae nisi harum, accusamus quae placeat culpa in illo vitae nam, modi recusandae distinctio deserunt dolores. Molestias, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident labore reprehenderit at aliquam dolores illo sapiente earum! Reiciendis, dolorem tempora aliquam excepturi nihil nemo neque debitis libero vero fuga3</p>
+            </div>
+            <div class="intro-img">                
+                <img src="assets/images/js-html-css-img.svg" alt="homem segurando a logo do CSS, uma mulher empurrando a logo do javascript e um outro homem segurando a logo do HTML5">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="first white-bg section">
+        <div class="main-content first-content">
+            <h2>news coverage and some surprises</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio vel facere rerum eaque velit libero facilis quaerat fugit tempore illum, laudantium dolorem? Fuga neque fugit tenetur, sit quaerat obcaecati?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab fuga aperiam. Repudiandae minima, ad ipsa magni dolor molestiae nisi a! Eaque ut tempore nihil at maxime nemo nobis corporis.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorem alias aspernatur exercitationem corrupti beatae pariatur eum enim earum accusantium laudantium doloribus, magni autem, saepe quas a praesentium velit illum.</p>
+        </div>
+    </section>
+
+    <section id="grid-jobs" class="second main-bg section">
+        <div class="main-content second-content">
+            <h2>jobs grid</h2>
+            <p>Dicta, voluptatibus magnam repellat, laudantium voluptatum laboriosam quos.</p>
+
+            <div class="grid-content">
+                <article>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio vel facere rerum eaque velit libero facilis quaerat fugit tempore illum, laudantium dolorem? Fuga neque fugit tenetur, sit quaerat obcaecati?</p>
+                </article>
+
+                <article>
+                    <h3>Ipsun</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab fuga aperiam. Repudiandae minima, ad ipsa magni dolor molestiae nisi a! Eaque ut tempore nihil at maxime nemo nobis corporis.</p>
+                </article>
+
+                <article>
+                    <h3>Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorem alias aspernatur exercitationem corrupti beatae pariatur eum enim earum accusantium laudantium doloribus, magni autem, saepe quas a praesentium velit illum.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery white-bg section">
+        <div class="main-content gallery-content">
+            <h2>gallery</h2>
+            <p>Some of my pics.</p>
+
+            <div class="grid-content">
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-油-菜-19067878.jpg" alt="random image from pexels">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-pedro-pacheco-5624853.jpg" alt="random image from pexels">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-katia-miasoed-19055794.jpg" alt="random image from pexels">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-jackson-david-3346230.jpg" alt="random image from pexels">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-dmitriy-ganin-7772719.jpg" alt="random image from pexels">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="assets/images/gallery/pexels-cottonbro-studio-4921185.jpg" alt="random image from pexels">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent-jobs" class="second main-bg section">
+        <div class="main-content second-content">
+            <h2>recent jobs</h2>
+            <p>Dicta, voluptatibus magnam repellat, laudantium voluptatum laboriosam quos.</p>
+
+            <div class="grid-content">
+                <article>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio vel facere rerum eaque velit libero facilis quaerat fugit tempore illum, laudantium dolorem? Fuga neque fugit tenetur, sit quaerat obcaecati?</p>
+                </article>
+
+                <article>
+                    <h3>Ipsun</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab fuga aperiam. Repudiandae minima, ad ipsa magni dolor molestiae nisi a! Eaque ut tempore nihil at maxime nemo nobis corporis.</p>
+                </article>
+
+                <article>
+                    <h3>Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorem alias aspernatur exercitationem corrupti beatae pariatur eum enim earum accusantium laudantium doloribus, magni autem, saepe quas a praesentium velit illum.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="first white-bg section">
+        <div class="main-content first-content">
+            <h2>pricing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio vel facere rerum eaque velit libero facilis quaerat fugit tempore illum, laudantium dolorem? Fuga neque fugit tenetur, sit quaerat obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi aperiam quisquam eligendi voluptatum quibusdam veritatis dolor reprehenderit accusantium laudantium dolores officiis corporis amet quos, aliquam id, consectetur qui minus!</p> 
+
+            <div class="responsive-table">
+                <table>
+                    <caption>pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>                            
+                            <td colspan="5">testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>          
+        </div>
+    </section>
+
+    <section id="contact" class="contact main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi nesciunt commodi molestiae nisi harum, accusamus quae placeat culpa in illo vitae nam, modi recusandae distinctio deserunt dolores. Molestias, cupiditate.</p>
+            </div>
+            <div class="intro-img">                
+                <img src="assets/images/undraw_mailbox_re_dvds.svg" alt="caixa de correio aberta com envelope na esntrada da caixa">
+            </div>
+            <div class="contact-form">
+                <fieldset class="field-grid">
+                    <legend>Contact Us</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="* Your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="* Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="* Your e-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Let us a message if you wanna talk with us..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Landing Page estudo, feito por Gianni Pires.</p>
+        <div class="icon-content">
+            <a href="https://github.com/GianniGiubel" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com/giannipires/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gianni-pires-36b21a266/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>       
+    </footer>
+    <a class="back-to-top" href="#home">❱</a>    
+</body>
+</html>
