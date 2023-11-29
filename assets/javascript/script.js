@@ -1,23 +1,60 @@
-const input_form = [...document.querySelectorAll('.input_form')]
+const first_name = document.querySelector('#first-name')
+const last_name = document.querySelector('#last-name')
+const email = document.querySelector('#email')
+const message = document.querySelector('#message')
 const send_form = document.querySelector('#send-form')  
 
-function valid_email() {
-    console.log("hello!")
+function valid_email(email) {    
+    const regex_email = new RegExp (
+        /^[a-zA-Z0-9.-_]+@[a-zA-Z0-9]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$/
+    )
+
+    if(email.value === '') {
+        email.setAttribute("placeholder" , "* Required field")
+        return
+    } else {    
+        if(regex_email.test(email.value)) {
+            return true
+        } else {
+            alert("Preencha seu e-mail corretamente!")
+        }
+    } 
+
+    return false   
+         
 }
 
-function check_empty_input() {
-    const empty_input = input_form.filter((input) => input.value === '')
-    empty_input.forEach((input) => input.setAttribute("placeholder" , "* Required field"))
-    
-    if(empty_input.length == 0) {
-        valid_email()
+function valid_name(name) {
+    const regex_name = new RegExp(
+        /^[a-zA-Z]+([a-zA-Z])/
+    )
+
+    if(name.value === '') {
+        name.setAttribute("placeholder" , "* Required field")
+        return
+    } 
+
+}
+
+function valid_last_name(lastName) {
+
+    if(lastName.value === '') {
+        lastName.setAttribute("placeholder" , "* Required field")
+        return
     }
+
 }
 
-function valid_form() {
-    check_empty_input()
-} 
+send_form.addEventListener('click', (event) => {  
+    
+    event.preventDefault()   
+    
+    valid_name(first_name)
 
-send_form.addEventListener('click', () => {     
-    valid_form()
+    valid_last_name(last_name)
+
+    if(!valid_email(email)) {        
+        return
+    }      
+
 }) 
