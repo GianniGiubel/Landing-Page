@@ -313,6 +313,9 @@ div.full-width {
 .form-group ::placeholder {
     color: #00000050;
 }
+.highlight::placeholder {
+    color: var(--highlight-color);
+}
 
 /* FOOTER CONTENT */
 
